@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>企业员工申报</title>
+
+  <link rel="stylesheet" href="../css/ydui.rem.css">
+  <link rel="stylesheet" href="../css/my.css">
+
+  <script src="../js/ydui.flexible.js"></script>
+
+</head>
+<body>
+
+
+<div id="app" style="display: none">
+
+<section class="yd-flexview">
+
+  <header class="yd-navbar" style="background-color: rgb(255, 255, 255);">
+    <div class="yd-navbar-item">
+      <a href="javascript:history.back()" class="router-link-active"><i class="yd-back-icon"></i></a>
+    </div>
+    <div class="yd-navbar-center-box" style="height: 1rem;">
+      <div class="yd-navbar-center">
+        <span class="yd-navbar-center-title" style="font-size: 0.3rem;">所属企业信息</span>
+      </div>
+    </div>
+    <div class="yd-navbar-item"></div>
+  </header>
+
+  <form class="yd-scrollview">
+
+    <div class="yd-cell-box">
+      <div class="yd-cell-title">经营者信息</div>
+      <div class="yd-cell">
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            企业名称：
+          </div>
+          <div class="yd-cell-right">
+            <input type="text" value="广州市示例科技有限公司">
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            身份证正面：
+          </div>
+          <div class="yd-cell-right">
+            <div style="float:right; margin-right: 15px;"><img src="../img/idcard1.jpg" height="31" style="display:block;"></div>
+            <label>
+              <div class="yd-btn" style="background:#e6e6e6; line-height: .6rem;">+</div>
+              <input type="file" style="display:none;">
+            </label>
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            身份证反面：
+          </div>
+          <div class="yd-cell-right">
+            <div style="float:right; margin-right: 15px;"><img src="../img/idcard2.jpg" height="31" style="display:block;"></div>
+            <label>
+              <div class="yd-btn" style="background:#e6e6e6; line-height: .6rem;">+</div>
+              <input type="file" style="display:none;">
+            </label>
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            姓名：
+          </div>
+          <div class="yd-cell-right">
+            <input type="text" value="何志鹏">
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            身份证号：
+          </div>
+          <div class="yd-cell-right">
+            <input type="text" value="440603199008163432">
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            居住地址：
+          </div>
+          <div class="yd-cell-right">
+            <input type="text" value="广东省广州市示例路123号456房">
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            免冠照片：
+          </div>
+          <div class="yd-cell-right">
+            <div style="float:right; margin-right: 15px;"><img src="../img/face.jpg" height="31" style="display:block;"></div>
+            <label>
+              <div class="yd-btn" style="background:#e6e6e6; line-height: .6rem;">+</div>
+              <input type="file" style="display:none;">
+            </label>
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            联系方式：
+          </div>
+          <div class="yd-cell-right">
+            <input type="text" value="13800138000">
+          </div>
+        </div>
+
+        <div class="yd-cell-item">
+          <div class="yd-cell-left">
+            企业邮箱：
+          </div>
+          <div class="yd-cell-right">
+            <input type="text" value="">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="yd-button">
+      <button type="button" class="yd-btn-block yd-btn-primary" @click="sm">申报</button>
+    </div>
+
+  </form>
+
+  <footer class="yd-tabbar" style="background-color: rgb(255, 255, 255); font-size: 0.22rem; padding: 0.1rem 0px;">
+
+    <a href="../main" class="yd-tabbar-item" style="color: #0396F6">
+      <span class="yd-tabbar-icon"><i class="yd-icon-home" style="font-size: 0.5rem;"></i></span>
+      <span class="yd-tabbar-txt">首页</span>
+    </a>
+
+    <a href="../me" class="yd-tabbar-item">
+      <span class="yd-tabbar-icon"><i class="yd-icon-ucenter-outline" style="font-size: 0.5rem;"></i></span>
+      <span class="yd-tabbar-txt">我的</span>
+    </a>
+
+  </footer>
+
+</section>
+
+
+</div><!--app-->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/ydui.rem.js"></script>
+<script src="../js/my.js"></script>
+
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+
+    
+  },
+  methods: {
+
+    sm: function(){
+      location.href = 'personal_success.html'
+    }
+
+    
+  },
+  mounted() {
+
+      console.log('vue is ready')
+
+  var _this = this
+
+  // this.loading = 0
+  $('#app').show()
+
+  }
+})
+</script>
+
+</body>
+</html>

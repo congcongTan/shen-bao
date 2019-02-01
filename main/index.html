@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>自主申报小程序</title>
+
+  <link rel="stylesheet" href="../css/ydui.rem.css">
+  <link rel="stylesheet" href="../css/my.css">
+
+  <script src="../js/ydui.flexible.js"></script>
+
+</head>
+<body>
+
+
+<div id="app" style="display: none">
+
+<section class="yd-flexview">
+
+  <header class="yd-navbar" style="background-color: rgb(255, 255, 255);">
+    <div class="yd-navbar-center-box" style="height: 1rem;">
+      <div class="yd-navbar-center">
+        <span class="yd-navbar-center-title" style="font-size: 0.3rem;">自主申报小程序</span>
+      </div>
+    </div>
+    <div class="yd-navbar-item"></div>
+  </header>
+
+  <section class="yd-scrollview">
+
+    <img src="../img/main/top.jpg" width="100%">
+
+    <div style="padding:15px;">
+      <a href="company.html"><img src="../img/main/bt1.jpg" width="100%"></a>
+
+      <br><br><br>
+
+      <a href="personal.html"><img src="../img/main/bt2.jpg" width="100%"></a>
+    </div>
+
+  </section>
+
+  <footer class="yd-tabbar" style="background-color: rgb(255, 255, 255); font-size: 0.22rem; padding: 0.1rem 0px;">
+
+    <a href="../main" class="yd-tabbar-item" style="color: #0396F6">
+      <span class="yd-tabbar-icon"><i class="yd-icon-home" style="font-size: 0.5rem;"></i></span>
+      <span class="yd-tabbar-txt">首页</span>
+    </a>
+
+    <a href="../me" class="yd-tabbar-item">
+      <span class="yd-tabbar-icon"><i class="yd-icon-ucenter-outline" style="font-size: 0.5rem;"></i></span>
+      <span class="yd-tabbar-txt">我的</span>
+    </a>
+
+  </footer>
+
+</section>
+
+
+</div><!--app-->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/ydui.rem.js"></script>
+<script src="../js/my.js"></script>
+
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+
+    
+  },
+  methods: {
+
+    
+  },
+  mounted() {
+
+      console.log('vue is ready')
+
+  var _this = this
+
+  // this.loading = 0
+  $('#app').show()
+
+  }
+})
+</script>
+
+</body>
+</html>

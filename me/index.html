@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  <title>我的</title>
+
+  <link rel="stylesheet" href="../css/ydui.rem.css">
+  <link rel="stylesheet" href="../css/my.css">
+
+  <script src="../js/ydui.flexible.js"></script>
+
+</head>
+<body>
+
+
+<div id="app" style="display: none">
+
+<section class="yd-flexview">
+
+  <header class="yd-navbar" style="background-color: rgb(255, 255, 255);">
+    <div class="yd-navbar-item">
+      <a href="javascript:history.back()" class="router-link-active"><i class="yd-back-icon"></i></a>
+    </div>
+    <div class="yd-navbar-center-box" style="height: 1rem;">
+      <div class="yd-navbar-center">
+        <span class="yd-navbar-center-title" style="font-size: 0.3rem;">我的</span>
+      </div>
+    </div>
+    <div class="yd-navbar-item"></div>
+  </header>
+
+  <section class="yd-scrollview">
+
+    <div style="background:url(../img/me/bg.jpg)">
+
+      <br><br><br>
+
+      <center>
+        <img src="../img/face.jpg" width="80" style="border-radius: 999px">
+        <div style="margin-top: 5px; line-height: 180%; color: #FFF">梁冠聪<br>136****1234</div>
+      </center>
+
+      <br><br><br>
+
+    </div>
+
+    <div class="yd-cell-box">
+      <div class="yd-cell">
+
+        <a href="#" class="yd-cell-item">
+          <div class="yd-cell-left">
+            <span class="yd-cell-icon">
+              <img src="http://static.ydcss.com/ydui/img/logo.png">
+            </span>
+            我的申报
+          </div>
+          <div class="yd-cell-right yd-cell-arrow"></div>
+        </a>
+
+        <a href="#" class="yd-cell-item">
+          <div class="yd-cell-left">
+            <span class="yd-cell-icon">
+              <img src="http://static.ydcss.com/ydui/img/logo.png">
+            </span>
+            帮助中心
+          </div>
+          <div class="yd-cell-right yd-cell-arrow"></div>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer class="yd-tabbar" style="background-color: rgb(255, 255, 255); font-size: 0.22rem; padding: 0.1rem 0px;">
+
+    <a href="../main" class="yd-tabbar-item">
+      <span class="yd-tabbar-icon"><i class="yd-icon-home" style="font-size: 0.5rem;"></i></span>
+      <span class="yd-tabbar-txt">首页</span>
+    </a>
+
+    <a href="../me" class="yd-tabbar-item" style="color: #0396F6">
+      <span class="yd-tabbar-icon"><i class="yd-icon-ucenter-outline" style="font-size: 0.5rem;"></i></span>
+      <span class="yd-tabbar-txt">我的</span>
+    </a>
+
+  </footer>
+
+</section>
+
+
+</div><!--app-->
+
+<script src="../js/jquery.min.js"></script>
+<script src="../js/vue.min.js"></script>
+<script src="../js/ydui.rem.js"></script>
+<script src="../js/my.js"></script>
+
+<script>
+var app = new Vue({
+  el: '#app',
+  data: {
+
+    
+  },
+  methods: {
+
+    
+  },
+  mounted() {
+
+      console.log('vue is ready')
+
+  var _this = this
+
+  // this.loading = 0
+  $('#app').show()
+
+  }
+})
+</script>
+
+</body>
+</html>

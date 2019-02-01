@@ -1,0 +1,1 @@
+function getUrl(e){var n=location.search.substr(1).match(new RegExp("(^|&)"+e+"=([^&]*)(&|$)"));if(null!=n)return unescape(decodeURI(n[2]))}
